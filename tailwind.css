@@ -2090,7 +2090,14 @@ button,
 textarea,
 input,
 select,
-a, span[role=button] {
+a,
+*[role=button],
+button *,
+textarea,
+input *,
+select,
+a *,
+*[role=button] * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none;
